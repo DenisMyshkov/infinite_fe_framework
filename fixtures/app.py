@@ -4,7 +4,7 @@ from application.application import Application
 
 
 @pytest.fixture(scope="session")
-def app() -> None:
+def app():
     driver = webdriver.Chrome()
     driver.delete_all_cookies()
     driver.set_window_position(0, 0)
